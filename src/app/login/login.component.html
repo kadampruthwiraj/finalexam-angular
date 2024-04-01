@@ -1,0 +1,32 @@
+<div class="container h-100">
+  <div>
+    <form>
+      <!-- Email input -->
+      <div>
+        <label class="form-label" for="emilid">Email address</label>
+        <input type="email" id="emilid" placeholder="Enter a valid email address" #username class="form-control" />
+
+      </div>
+
+      <!-- Password input -->
+      <div>
+        <label class="form-label" for="passwordid">Password</label>
+        <input type="password" id="passwordid" placeholder="Enter password" #password class="form-control" />
+
+      </div>
+
+
+
+      <div>
+        <button type="button" style="padding-left: 2.5rem; padding-right: 2.5rem"
+          (click)="login(username.value,password.value)" class="form-control">
+          Login
+        </button>
+        <p>
+          Don't have an account?
+          <a href="/register" class="link-danger">Register</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
